@@ -1,10 +1,9 @@
 # ObjectShape
-This repository contains R-code related to the article "New M-estimator of the leading principal component" by Virta (2025).
+This repository contains R-code related to the article _New M-estimator of the leading principal component_ by Virta (2025).
 
 The manuscript proposes a novel measure of shape for data residing in an arbitrary metric space. The measure is computed as a ratio of certain moments of interpoint distances and its value describes the shape of the distribution in a specific way illustrated in Theorem 2.1 and Section 3 of the article.
 
-
-All code is in R and requires the packages (add here).
+All code is in R.
 
 The code files are:
 

@@ -7,7 +7,7 @@ All code is in R.
 
 The code files are:
 
-- code_algorithm.R, 
+- code_algorithm.R, contains the function oshape() for computing the object shape and peel() for computing the peeling plot.
 
 ## Authors
 

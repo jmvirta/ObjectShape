@@ -8,7 +8,7 @@
 
 # D = distance matrix
 # is.squared = whether the elements of D are squared distances or not
-msphe <- function(D, is.squared = FALSE){
+oshape <- function(D, is.squared = FALSE){
   if(!is.squared){
     D <- D^2
   }
@@ -44,7 +44,7 @@ peel <- function(D, min = TRUE){
     
     temp <- cbind(remaining_elem, rep(0, n - i + 1))
     for(j in 1:(n - i + 1)){
-      temp[j, 2] <- msphe(D[remaining_elem[-j], remaining_elem[-j]], is.squared = TRUE)
+      temp[j, 2] <- oshape(D[remaining_elem[-j], remaining_elem[-j]], is.squared = TRUE)
     }
     
     if(min){
@@ -53,7 +53,6 @@ peel <- function(D, min = TRUE){
     if(!min){
       min_ind <- which.max(temp[, 2])[1]
     }
-    
     
     res[i, ] <- temp[min_ind, ] 
     removed_elem <- c(removed_elem, remaining_elem[min_ind])
